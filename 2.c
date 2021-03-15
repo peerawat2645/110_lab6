@@ -1,3 +1,4 @@
+//troll
 #include <stdio.h>
 int main(){
     int n,i,j=0,k,p=0,num,an;

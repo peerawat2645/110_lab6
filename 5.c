@@ -1,11 +1,11 @@
 #include <stdio.h>
 int main(){
-    long long int w,h,i,j,s=0,a,b;
+    int w,h,i,j,s=0,a,b;
     scanf("%lld %lld",&w,&h);
-    long long int p[w][h];
+    int p[w][h];
     for(i=0;i<h;i++){
         for(j=0;j<w;j++){
-            scanf("%lld",&p[i][j]);
+            scanf("%d",&p[i][j]);
             s+=p[i][j];
         }
         a=s,b=s;
@@ -14,5 +14,5 @@ int main(){
         s++;
         a=s;
     }while(a%(w*h)!=0);
-    printf("%lld",a-b);
+    printf("%d",a-b);
 }
